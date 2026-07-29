@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
+    \small +91 9582760637 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/meehir-prabhakar-966330231/}
+    {\underline{linkedin.com/in/meehir-prabhakar-966330231/}} $|$
+    \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{India}
+      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+    \resumeSubheading
+      {Bhatnagar International School}{India}
+      {PCM (Physics, Chemistry, Mathematics)}{}
+    \resumeSubheading
+      {Convent of Rani Jhansi}{India}
+      {Primary Education}{}
+  \resumeSubHeadingListEnd
+
+\section{Professional Experience \& Applied Research}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
+      {AI/ML and Computer Vision Intern}{Dec. 2024 -- May 2026}
+      \resumeItemListStart
+      
+        \vspace{2pt}
+        \resumeItem{\textbf{\underline{PROJECT: Autonomous Precision Agriculture \& Telemetry}}}
+        \resumeItem{Engineered a real-time crop disease detection pipeline using YOLO and OpenCV, processing live drone video feeds to identify structural anomalies and infections across 7 commercial crops.}
+        \resumeItem{Integrated MAVLink telemetry to synchronize model inference with drone GPS coordinates, mapping high-confidence infection clusters onto interactive Folium and Streamlit dashboards.}
+        \resumeItem{Developed an offline Text-to-Speech engine using VITS (Sherpa-ONNX) to narrate region-specific pesticide treatments and agronomic recommendations for field operators.}
+        \resumeItem{Designed a multi-threaded PyQt6 graphical interface enabling real-time confidence tuning, sensor monitoring, and seamless model switching during flight operations.}
+        \resumeItem{Developed a synchronized video and telemetry recording thread, coupled with an automated batch-inference engine to run YOLO disease detection on pre-recorded drone flights.}
+        \resumeItem{Engineered a smart serial port detection algorithm to automatically identify and connect ESP32/Arduino telemetry modules, ensuring seamless field deployments.}
+        \resumeItem{Implemented a dynamic mock telemetry injector for hardware-free UI testing and adapted inference pipelines to optimize confidence thresholds for high-altitude crop analysis.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: Automated Agronomic Reporting Engine}}}
+        \resumeItem{Engineered a dynamic PDF report generation system within a FastAPI backend using the fpdf2 library to automatically summarize YOLO-detected crop diseases, processing metrics, and localized treatments.}
+        \resumeItem{Implemented a robust internationalization (i18n) pipeline to render agricultural reports in both English and Telugu, utilizing custom dictionary mappings for precise translation of crop names and pathology terms.}
+        \resumeItem{Integrated text shaping logic via uharfbuzz and custom Noto Sans typography fallback mechanisms to guarantee the accurate rendering of complex regional scripts and glyphs in cross-platform PDF exports.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: Warehouse Inventory \& Occupational Safety}}}
+        \resumeItem{Developed a real-time box and SKU counting system utilizing custom-trained YOLO models (nSKU/BoxE) to automate inventory management from live camera feeds.}
+        \resumeItem{Engineered a bespoke Non-Maximum Suppression (NMS) algorithm using Intersection over Union (IoU) metrics to eliminate overlapping bounding boxes and ensure high-precision counting.}
+        \resumeItem{Designed a frame-history tracking mechanism to filter transient false positives in live video, automatically logging verified count changes for stable inventory tracking.}
+        \resumeItem{Developed a real-time worker safety pipeline combining YOLOv8 person detection and MediaPipe Pose to evaluate ergonomic posture by computing spinal angles from skeletal landmarks.}
+        \resumeItem{Integrated a custom-trained YOLO model into the vision pipeline to simultaneously verify hardhat compliance by analyzing isolated worker regions of interest.}
+        \resumeItem{Engineered a dynamic collision-avoidance system deploying dual YOLO models to track personnel and forklifts, utilizing a bounding box intersection algorithm to trigger visual proximity warnings.}
+        \resumeItem{Designed a video ingestion and logging architecture using OpenCV to overlay real-time posture diagnostics and helmet status, exporting timestamped footage for safety compliance auditing.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: Autonomous Aquatic Surface Robot (TGWV1)}}}
+        \resumeItem{Engineered the primary computer vision pipeline for a water surface cleaning robot (TGWV1), deploying custom YOLO models to detect, classify, and track floating waste and wildlife obstacles.}
+        \resumeItem{Interfaced a YDLIDAR G2 sensor with a custom C++ application using the YDLidar-SDK to process 360-degree point cloud data in real-time.}
+        \resumeItem{Developed a spatial filtering algorithm to isolate a 30-degree forward-facing Field of View (FOV), identifying obstacles within a 1.2-meter safe zone to trigger GPIO haptic feedback.}
+        \resumeItem{Built a parallel computer vision pipeline in Python using OpenCV and a custom-trained YOLO model to detect environmental hazards like fires and potholes from live webcam feeds.}
+        \resumeItem{Implemented a focal-length-based spatial estimation algorithm to calculate the proximity and relative intercept angle of aquatic debris directly from 2D bounding box data.}
+        \resumeItem{Developed the directional signaling logic utilizing the lgpio library to translate visual target coordinates into hardware-level motor control triggers, guiding the vessel's navigation microcontrollers.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: 3D Scene Reconstruction \& Vegetation Analysis}}}
+        \resumeItem{Developed a dual-model vision pipeline combining VGGT monocular depth estimation and YOLO instance segmentation to isolate nearby vegetation. Engineered a bitwise mask intersection algorithm to filter foliage within a 1.0-meter proximity threshold.}
+        \resumeItem{Implemented a 3D point-cloud generation tool using Trimesh to convert VGGT depth predictions and camera extrinsics into interactive GLB environments. Integrated an ONNX-based sky segmentation model to filter out background noise from the reconstructed scenes.}
+        \resumeItem{Created an automated OpenCV pipeline to overlay real-time camera coordinates, timestamps, and segmentation masks onto video feeds for precise geospatial tracking of overgrown bushes.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: SentinelHelm Intelligent Surveillance}}}
+        \resumeItem{Engineered a real-time AI security platform integrating YOLO-based weapon detection and DeepFace facial recognition to identify threats in live video feeds.}
+        \resumeItem{Developed a Person of Interest (POI) tracking pipeline using ArcFace embeddings and FAISS for high-speed vector similarity search, linked to an SQLite metadata database. Offloaded embedding extraction to a QThreadPool to prevent UI freezing.}
+        \resumeItem{Designed a custom heuristic algorithm utilizing YOLO pose keypoints to identify fighting stances and calculate limb velocity for physical hit detection. Integrated a 5-class weapon and fist detection model to minimize false positives.}
+        \resumeItem{Built a responsive Material Design interface using PyQt6 and QML (QtQuick) for live stream viewing and database management. Implemented dynamic GPU memory allocation via TensorFlow to resolve Windows-specific memory crashes.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: Cross-Modal Spectral \& Visual Analysis}}}
+        \resumeItem{Engineered a cross-modal pseudo-labeling pipeline, utilizing DBSCAN clustering on FT-IR spectra to generate chemical ground-truth labels for training visual anomaly detection models.}
+        \resumeItem{Developed an unsupervised anomaly detection pipeline for FT-IR spectra, applying Savitzky-Golay filtering, SNV scatter correction, and PCA dimensionality reduction prior to Isolation Forest classification.}
+        \resumeItem{Built a custom computer vision feature extractor to quantify turmeric purity, fusing 1D arrays of Hue/Saturation histograms and Local Binary Pattern (LBP) texture maps to bypass deep learning overhead.}
+        \resumeItem{Trained Random Forest and One-Class SVM classifiers on the extracted visual features, implementing SMOTE for minority class synthesis and PCA for component compression.}
+
+        \vspace{4pt}
+        \resumeItem{\textbf{\underline{PROJECT: Visual SLAM \& Odometry Engine}}}
+        \resumeItem{Engineered a synchronized data capture pipeline integrating stereo webcams, an MPU9250 IMU, and NMEA GPS receivers via PySerial to generate multi-modal datasets for odometry evaluation.}
+        \resumeItem{Developed a monocular VO system utilizing ORB feature extraction and FLANN-based matching, implementing Essential matrix decomposition and point triangulation to mathematically recover relative camera scale.}
+        \resumeItem{Built a complete visual SLAM architecture featuring StereoSGBM disparity mapping, FAST corner detection, and Lucas-Kanade (KLT) optical flow tracking to process binocular video streams.}
+        \resumeItem{Implemented Levenberg-Marquardt optimization to minimize 3D-2D reprojection residuals for accurate 6-DOF camera pose estimation, reconstructing and exporting global 3D point cloud environments.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct. 2023 -- May. 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Game Engine Architecture:} Engineered a 3D survival game (PAC 3D) in Godot Engine using GDScript, implementing custom physical environments, ambient audio systems, and state-persistent UI overlays.}
+        \resumeItem{\textbf{AI \& Pathfinding:} Programmed dynamic enemy AI utilizing Godot's NavigationMesh for spatial pathfinding, featuring smooth animation blending and progressive difficulty scaling algorithms.}
+        \resumeItem{\textbf{Gameplay Systems:} Designed real-time player HUD components, including a dynamic minimap, pause state management, and modular scene transitions.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{github.com/MLC-VIT-AP/PAC\_3D}}}
+        \resumeItem{Contributed to club operations and open-source project development initiatives utilizing machine learning and programming tools.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Project Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered an AI-driven SIEM/MDR framework that normalizes heterogeneous telemetry across network flows, web apps, and OS logs (Loghub, LANL, CICIDS) into a standardized JSON schema.}
+        \resumeItem{Deployed layer-specific ML models, utilizing Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF character N-grams for L7 web and auth threat isolation.}
+        \resumeItem{Built a central Fusion Engine utilizing a 60-second temporal sliding window for cross-layer attack correlation, integrating SHAP and LIME for explainable threat attribution.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul. 2024 -- Nov. 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a neutrally buoyant autonomous submarine for deep sewage inspection to replace manual scavenging, utilizing an isolated 11.1V dual-battery architecture to prevent CPU brownouts.}
+        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 3.0 FPS.}
+        \resumeItem{Designed a mechanical SONAR imaging system (DYP-A08) utilizing Open3D noise reduction and Matplotlib bicubic interpolation to generate spatial depth heatmaps for zero-visibility navigation.}
+        \resumeItem{Programmed 3D propulsion and robotic arm actuation via \texttt{lgpio}, interfacing RS2205 brushless motors through 30A ESCs and a 16-channel PCA9685 PWM controller.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, Go, Bash/Zsh, Lua, Kotlin, GDScript} \\
+     \textbf{AI, ML \& Vision}{: PyTorch, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, SHAP, LIME} \\
+     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Git/GitHub, FastAPI, QML, Volatility 3, AVML} \\
+     \textbf{Hardware \& Edge}{: ESP32, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
+     \textbf{Core Domains}{: Computer Vision, Visual SLAM, SIEM/MDR Pipelines, Memory Forensics, Unsupervised Learning}
+    }}
+ \end{itemize}
+
+\end{document}

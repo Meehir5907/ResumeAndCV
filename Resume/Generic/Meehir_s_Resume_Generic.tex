@@ -1,0 +1,148 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
+    \small +91 9582760637 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/meehir-prabhakar-966330231/}{\underline{linkedin.com/in/meehir-prabhakar-966330231/}} $|$
+    \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{India}
+      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
+      {AI/ML and Computer Vision Intern}{Dec. 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Autonomous Vision Systems:} Engineered an end-to-end multi-model computer vision pipeline utilizing YOLO, VGGT, and OpenCV for real-time crop pathology detection and ergonomic worker-safety monitoring.}
+        \resumeItem{\textbf{SLAM \& Spatial Computing:} Developed binocular visual SLAM and odometry architectures using StereoSGBM disparity mapping, ORB/FAST feature extraction, and Levenberg-Marquardt pose optimization.}
+        \resumeItem{\textbf{Algorithmic Optimization:} Designed custom Non-Maximum Suppression (NMS) algorithms, implemented ArcFace embeddings with FAISS for asynchronous POI tracking, and trained Isolation Forests for spectral anomaly detection.}
+        \resumeItem{\textbf{Hardware Integration \& Backend:} Synchronized parallel model inference with MAVLink telemetry and YDLIDAR G2 point clouds via C++. Built a FastAPI backend generating localized PDF agronomic reports.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a 3D survival game in Godot (GDScript) featuring state-persistent UIs, dynamic minimaps, and NavigationMesh-based enemy AI pathfinding with progressive difficulty scaling.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{github.com/MLC-VIT-AP/PAC\_3D}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Project Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered an AI-driven SIEM/MDR framework that normalizes heterogeneous telemetry across network flows, web apps, and OS logs into a standardized JSON schema.}
+        \resumeItem{Deployed Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF N-grams for L7 web/auth threat isolation.}
+        \resumeItem{Built a central Fusion Engine utilizing a temporal sliding window for cross-layer attack correlation, integrating SHAP and LIME for explainability.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul. 2024 -- Nov. 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a neutrally buoyant autonomous submarine for deep sewage inspection, utilizing an isolated 11.1V dual-battery architecture to prevent CPU brownouts.}
+        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 3.0 FPS.}
+        \resumeItem{Designed a mechanical SONAR imaging system (DYP-A08) utilizing Open3D noise reduction and Matplotlib bicubic interpolation to generate spatial depth heatmaps for zero-visibility navigation.}
+        \resumeItem{Programmed 3D propulsion and robotic arm actuation via \texttt{lgpio}, interfacing RS2205 brushless motors through 30A ESCs and a 16-channel PCA9685 PWM controller.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Zsh, Lua, Kotlin, GDScript} \\
+     \textbf{AI, ML \& Vision}{: PyTorch, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, SHAP, LIME} \\
+     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Git/GitHub, FastAPI, QML, Volatility 3, AVML} \\
+     \textbf{Hardware \& Edge}{: ESP32, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
+     \textbf{Core Domains}{: Computer Vision, Visual SLAM, SIEM/MDR Pipelines, Memory Forensics, Unsupervised Learning}
+    }}
+ \end{itemize}
+
+\end{document}
