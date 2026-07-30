@@ -1,0 +1,143 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
+    \small +91 9582760637 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/meehir-prabhakar-966330231/}{\underline{linkedin.com/in/meehir-prabhakar-966330231/}} $|$
+    \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{India}
+      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
+      {Software \& AI Engineering Intern}{Dec. 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Backend Architecture:} Engineered a scalable FastAPI backend using Python to generate dynamic agronomic reports, integrating robust internationalization pipelines.}
+        \resumeItem{\textbf{Systems Integration:} Synchronized parallel model inference with MAVLink telemetry and YDLIDAR G2 point clouds, developing custom interfacing applications in C++.}
+        \resumeItem{\textbf{Edge OS Deployment:} Deployed optimized machine learning models directly onto Linux-based edge devices, managing system resources and memory for real-time processing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a 3D software environment demonstrating strong object-oriented design by implementing state-persistent UIs and dynamic AI pathfinding algorithms.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/MLC-VIT-AP/PAC-3D}{\underline{github.com/MLC-VIT-AP/PAC-3D}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Software \& Systems Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI SIEM \& MDR Pipeline} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered an AI-driven SIEM framework in Python that normalizes heterogeneous telemetry across network flows, web apps, and OS logs into a standardized JSON schema.}
+        \resumeItem{Designed a central Fusion Engine utilizing a temporal sliding window to correlate cross-layer attacks, showcasing strong data structure manipulation and algorithmic logic.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Linux Edge Systems \& OS Configuration} $|$ \emph{Python, Golang, Bash, Arch Linux}}{Ongoing}
+      \resumeItemListStart
+        \resumeItem{Configured and maintained custom Arch Linux environments, writing automated Bash and Python scripts for system administration, kernel tuning, and cron job scheduling.}
+        \resumeItem{Deployed custom software on a headless Raspberry Pi 5 running Linux for an autonomous submarine, utilizing \texttt{lgpio} and Python to interface with hardware controllers.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Awards \& Achievements}
+    \begin{itemize}[leftmargin=20pt, label={}]
+      \small{\item{
+        \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
+        \textbf{AI Autonomous Hackathon 2025:} Exhibited an AI model; received a Letter of Appreciation from AIMERS for problem-solving in AI (Feb. 2025). \\
+        \textbf{Ideathon 2K25:} Participated in the innovation showcase at Chalapathi Institute of Engineering \& Technology (Mar. 2025).
+      }}
+    \end{itemize}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Zsh, Lua, Kotlin, GDScript} \\
+     \textbf{Systems \& OS}{: Linux (RHEL exposure, Arch, KVM, Kernel Tuning, Cron), Git/GitHub, FastAPI, QML, Volatility 3, AVML} \\
+     \textbf{Software Engineering}{: Object-Oriented Design, RESTful APIs, Agile workflows, Systems Integration} \\
+     \textbf{AI \& ML}{: PyTorch, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, SHAP, LIME}
+    }}
+ \end{itemize}
+
+\end{document}

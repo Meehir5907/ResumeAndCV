@@ -19,11 +19,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Aggressive Margin Adjustments
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{1.75in}
 
 \urlstyle{same}
 
@@ -31,9 +32,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Tighter Section Spacing
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
 
 \pdfgentounicode=1
 
@@ -44,7 +46,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -62,7 +64,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -72,17 +74,18 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+% Tighter List End Spacing
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 
 \begin{document}
 
 \begin{center}
     \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
     \small +91 9582760637 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/meehir-prabhakar-966330231/}
-    {\underline{linkedin.com/in/meehir-prabhakar-966330231/}} $|$
+    \href{https://linkedin.com/in/meehir-prabhakar-966330231/}{\underline{linkedin.com/in/meehir-prabhakar-966330231/}} $|$
     \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}}
 \end{center}
+\vspace{-12pt}
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -117,7 +120,7 @@
 
         \vspace{4pt}
         \resumeItem{\textbf{\underline{PROJECT: Automated Agronomic Reporting Engine}}}
-        \resumeItem{Engineered a dynamic PDF report generation system within a FastAPI backend using the fpdf2 library to automatically summarize YOLO-detected crop diseases, processing metrics, and localized treatments.}
+        \resumeItem{Engineered a dynamic PDF report generation system within a FastAPI backend using the fpdf2 library to summarize YOLO-detected crop diseases, processing metrics, and localized treatments.}
         \resumeItem{Implemented a robust internationalization (i18n) pipeline to render agricultural reports in both English and Telugu, utilizing custom dictionary mappings for precise translation of crop names and pathology terms.}
         \resumeItem{Integrated text shaping logic via uharfbuzz and custom Noto Sans typography fallback mechanisms to guarantee the accurate rendering of complex regional scripts and glyphs in cross-platform PDF exports.}
 
@@ -127,7 +130,7 @@
         \resumeItem{Engineered a bespoke Non-Maximum Suppression (NMS) algorithm using Intersection over Union (IoU) metrics to eliminate overlapping bounding boxes and ensure high-precision counting.}
         \resumeItem{Designed a frame-history tracking mechanism to filter transient false positives in live video, automatically logging verified count changes for stable inventory tracking.}
         \resumeItem{Developed a real-time worker safety pipeline combining YOLOv8 person detection and MediaPipe Pose to evaluate ergonomic posture by computing spinal angles from skeletal landmarks.}
-        \resumeItem{Integrated a custom-trained YOLO model into the vision pipeline to simultaneously verify hardhat compliance by analyzing isolated worker regions of interest.}
+        \resumeItem{Integrated a custom-trained YOLO model into the vision pipeline to verify hardhat compliance by analyzing isolated worker regions of interest.}
         \resumeItem{Engineered a dynamic collision-avoidance system deploying dual YOLO models to track personnel and forklifts, utilizing a bounding box intersection algorithm to trigger visual proximity warnings.}
         \resumeItem{Designed a video ingestion and logging architecture using OpenCV to overlay real-time posture diagnostics and helmet status, exporting timestamped footage for safety compliance auditing.}
 
@@ -198,18 +201,19 @@
         \resumeItem{Engineered a neutrally buoyant autonomous submarine for deep sewage inspection to replace manual scavenging, utilizing an isolated 11.1V dual-battery architecture to prevent CPU brownouts.}
         \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 3.0 FPS.}
         \resumeItem{Designed a mechanical SONAR imaging system (DYP-A08) utilizing Open3D noise reduction and Matplotlib bicubic interpolation to generate spatial depth heatmaps for zero-visibility navigation.}
-        \resumeItem{Programmed 3D propulsion and robotic arm actuation via \texttt{lgpio}, interfacing RS2205 brushless motors through 30A ESCs and a 16-channel PCA9685 PWM controller.}
+        \resumeItem{Programmed 3D propulsion and robotic arm actuation via \texttt{lgpio}, controlling RS2205 brushless motors via 30A ESCs and a PCA9685 PWM controller.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Awards \& Achievements}
  \begin{itemize}[leftmargin=20pt, label={}]
     \small{\item{
-     \textbf{1st Place, Innovative Model Competition}{: Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025).} \\
-     \textbf{AI Autonomous Hackathon 2025}{: Exhibited an AI model; received a Letter of Appreciation from AIMERS for problem-solving in AI (Feb. 2025).} \\
-     \textbf{Ideathon 2K25}{: Participated in the innovation showcase at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
+     \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
+     \textbf{AI Hackathon 2025}{: AIMERS Letter of Appreciation (Feb. 2025).} \\
+     \textbf{Ideathon 2K25}{: Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
     }}
  \end{itemize}
+ \vspace{-10pt}
 
 \section{Technical Skills}
  \begin{itemize}[leftmargin=20pt, label={}]
