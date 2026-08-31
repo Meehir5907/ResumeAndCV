@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Aggressive Margin Adjustments
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{1.75in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Tighter Section Spacing
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+% Tighter List End Spacing
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
+    \small +91 6304385747 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$
+    \href{https://linkedin.com/in/meehir-prabhakar}{\underline{linkedin.com/in/meehir-prabhakar}} $|$
+    \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}}
+\end{center}
+\vspace{-12pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{India}
+      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
+      {AI/ML and Computer Vision Intern}{Dec. 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{AI Engineering \& Solution Development:} Engineered and tested multi-model AI pipelines (YOLO, VGGT, OpenCV) for real-time inference, deploying scalable AI-powered solutions on edge devices.}
+        \resumeItem{\textbf{Software Engineering \& API Development:} Developed robust backend services using FastAPI to ingest live telemetry and automate cross-platform reporting, seamlessly integrating AI capabilities into business workflows.}
+        \resumeItem{\textbf{Data Engineering \& Model Enablement:} Built and maintained data pipelines to process structured MAVLink telemetry and unstructured point cloud data (YDLIDAR), ensuring data quality and readiness for model evaluation.}
+        \resumeItem{\textbf{Optimization \& Tracking:} Designed custom Non-Maximum Suppression (NMS) algorithms, implemented dynamic GPU memory allocation, and tracked model performance to ensure high reliability and continuous improvement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Solution Design \& Collaboration:} Translated complex requirements into scalable technical solutions, utilizing NavigationMesh for spatial pathfinding and dynamic AI behavior.}
+        \resumeItem{\textbf{Development:} Engineered interactive environments with state-persistent UIs using modern frameworks and GDScript, collaborating with cross-functional teams on design reviews.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI SIEM \& MDR Pipeline} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Data Processing \& Preprocessing:} Analyzed unstructured datasets (network flows, OS logs) and built pipelines to clean and normalize heterogeneous telemetry into a unified JSON schema for ML training.}
+        \resumeItem{\textbf{Machine Learning Models:} Trained and evaluated Isolation Forests and One-Class SVMs (with TF-IDF N-grams) for robust anomaly and cyber threat detection.}
+        \resumeItem{\textbf{Documentation \& Explainability:} Integrated SHAP and LIME to interpret model architectures, track performance, and provide actionable insights for threat correlation.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul. 2024 -- Nov. 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Model Deployment:} Deployed NCNN-optimized YOLOv8n segmentation models on headless hardware (Raspberry Pi 5) for real-time structural analysis.}
+        \resumeItem{\textbf{Algorithm Design:} Analyzed mechanical SONAR data using Open3D noise reduction and bicubic interpolation to build interactive depth heatmaps.}
+        \resumeItem{Programmed 3D propulsion and arm actuation via \texttt{lgpio}, controlling RS2205 brushless motors via 30A ESCs and a PCA9685 PWM controller.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Awards \& Achievements}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
+     \textbf{AI Hackathon 2025}{: AIMERS Letter of Appreciation (Feb. 2025).} \\
+     \textbf{Ideathon 2K25}{: Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{Core Languages}{: Python, C, C++, SQL, Bash, Git} \\
+     \textbf{AI \& ML Frameworks}{: PyTorch, TensorFlow, Scikit-Learn, OpenCV, YOLO, Transformers, FAISS, SHAP, LIME} \\
+     \textbf{Software \& Data Engineering}{: API Development (FastAPI), Data Pipelines, CI/CD Concepts, Linux (KVM, Kernel Tuning)} \\
+     \textbf{Core Domains}{: AI Engineering, Machine Learning, Data Preprocessing, Computer Vision, Model Deployment, Agile Methodologies}
+    }}
+ \end{itemize}
+
+\end{document}
