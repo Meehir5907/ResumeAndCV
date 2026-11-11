@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.9in}
+\addtolength{\textheight}{1.85in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Meehir Prabhakar} \\ \vspace{1pt}
+    \small +91 6304385747 $|$ \href{mailto:meehir.work@gmail.com}{\underline{meehir.work@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/meehir-prabhakar}{\underline{linkedin.com/in/meehir-prabhakar}} $|$
+    \href{https://github.com/Meehir5907}{\underline{github.com/Meehir5907}} $|$
+    \href{https://meehir.vercel.app}{\underline{meehir.vercel.app}}
+\end{center}
+\vspace{-14pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{Amaravati, India}
+      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun. 2027}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
+      {Robotics \& Computer Vision Engineering Intern}{Dec. 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Hardware \& Sensor Integration:} Synchronized parallel vision inference with MAVLink flight telemetry and YDLIDAR G2 2D point clouds via C++ for autonomous obstacle avoidance and surface cleaning robotics.}
+        \resumeItem{\textbf{SLAM \& Spatial Navigation:} Engineered binocular visual SLAM and odometry architectures utilizing StereoSGBM disparity mapping, ORB/FAST feature extraction, and Levenberg-Marquardt pose optimization.}
+        \resumeItem{\textbf{3D Depth \& Proximity Filtering:} Developed a dual-model perception pipeline combining VGGT monocular depth estimation and YOLO instance segmentation to isolate obstacles within a 1.0-meter threshold.}
+        \resumeItem{\textbf{Autonomous Perception Systems:} Built real-time multi-model vision pipelines (YOLO, MediaPipe Pose, OpenCV) for warehouse ergonomics monitoring, safety compliance, and autonomous drone payload tracking.}
+        \resumeItem{\textbf{Technical Training \& Onboarding:} Authored hardware-software integration workflows, calibration guides, and FastAPI telemetry reporting engines to train incoming interns on UAV and rover architectures.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Machine Learning Club VIT-AP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Pathfinding \& Autonomous Agents:} Engineered a 3D simulation environment in Godot featuring NavigationMesh autonomous pathfinding, spatial state machines, and dynamic obstacle avoidance (\href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{github.com/MLC-VIT-AP/PAC\_3D}}).}
+        \resumeItem{\textbf{Technical Mentorship:} Conducted hands-on workshops and code reviews, mentoring undergraduate peers in kinematic state machines, computer vision fundamentals, and modular Git workflows.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Robotics \& Embedded Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Underwater Vehicle (AUV)} $|$ \emph{Python, RPi 5, YOLOv8n, NCNN, Open3D}}{Jul. 2024 -- Nov. 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a neutrally buoyant autonomous submarine for pipe inspection, utilizing an isolated 11.1V dual-battery power distribution architecture to prevent Raspberry Pi 5 CPU brownouts under heavy thruster load.}
+        \resumeItem{Programmed 6-DOF 3D propulsion and robotic arm actuation via \texttt{lgpio}, driving RS2205 brushless motors through 30A ESCs and a PCA9685 I2C PWM controller.}
+        \resumeItem{Designed an acoustic SONAR imaging array (DYP-A08) utilizing Open3D point-cloud noise reduction and bicubic interpolation to generate spatial depth heatmaps for zero-visibility navigation.}
+        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on edge hardware to detect and map structural fractures in real time at 3.0 FPS.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{3D LiDAR Point Cloud Scanner} $|$ \emph{C++, Python, RPLiDAR, Open3D, Trimesh}}{Sep. 2025 -- Nov. 2025}
+      \resumeItemListStart
+        \resumeItem{Constructed a custom 3D spatial mapping rig integrating rotational 2D LiDAR sensors (RPLiDAR / YDLIDAR) with microcontroller-driven servo actuation for full-room volumetric scanning.}
+        \resumeItem{Developed a custom serial parsing and coordinate transformation pipeline to convert polar range measurements into dense 3D Cartesian point clouds ($X, Y, Z$) with real-time outlier filtering.}
+        \resumeItem{Implemented surface reconstruction and mesh generation algorithms using Open3D and Trimesh to export navigable 3D environments for robotics simulation and training demonstrations.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{Robotics \& Hardware}{: Raspberry Pi 5, ESP32, Arduino, LiDAR (YDLIDAR G2, RPLiDAR), Ultrasonic/SONAR, MAVLink Telemetry, Brushless ESCs, PCA9685 PWM, I2C/UART/SPI, PCB Rework \& Soldering} \\
+     \textbf{Computer Vision \& Spatial AI}{: OpenCV, Visual SLAM, Open3D, Trimesh, YOLOv8, NCNN (Edge Deployment), MediaPipe, PyTorch, Stereo Disparity Mapping} \\
+     \textbf{Languages \& Tooling}{: C++, C, Python, Bash/Zsh, Lua, Go, Linux (Arch, Udev Rules), CMake, Git, Docker, Qt6/QML} \\
+     \textbf{Core Domains}{: Autonomous Navigation, Sensor Fusion, Edge AI Optimization, Kinematics \& Actuation, Technical Mentorship \& Curriculum Delivery}
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+
+\section{Awards \& Achievements}
+ \begin{itemize}[leftmargin=20pt, label={}]
+    \small{\item{
+     \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) for demonstrating an applied AI and hardware prototype. \\
+     \textbf{AI Hackathon 2025}{: Awarded AIMERS Letter of Appreciation for rapid prototyping and system design (Feb. 2025).} \\
+     \textbf{Ideathon 2K25}{: Innovation Showcase Presenter at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
+    }}
+ \end{itemize}
+
+\end{document}
