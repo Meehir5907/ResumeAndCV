@@ -22,7 +22,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Aggressive Margin Adjustments
+% Balanced Margin Adjustments
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.6in}
 \addtolength{\textwidth}{1.2in}
@@ -35,10 +35,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Tighter Section Spacing
+% Balanced Section Spacing
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5.5pt}]
 
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -74,8 +74,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=8pt, label={}, topsep=4pt, partopsep=0pt, itemsep=5pt, parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt, topsep=2pt, partopsep=0pt, itemsep=1.5pt, parsep=0pt]}
-% Tighter List End Spacing
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt, topsep=2pt, partopsep=0pt, itemsep=1.8pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \begin{document}
@@ -92,8 +91,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {VIT-AP University}{India}
-      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+      {VIT-AP University}{Amaravati, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2023 -- Jun 2027 (Expected)}
   \resumeSubHeadingListEnd
 
 \section{Experience}
@@ -101,20 +100,20 @@
 
     \resumeSubheading
       {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
-      {AI/ML and Computer Vision Intern}{Dec. 2024 -- May 2026}
+      {AI/ML and Computer Vision Intern}{Dec 2024 -- May 2026}
       \resumeItemListStart
-        \resumeItem{\textbf{Autonomous Vision Systems:} Engineered a multi-model vision pipeline (YOLO, VGGT, OpenCV) for real-time crop pathology detection and worker safety monitoring.}
-        \resumeItem{\textbf{Depth \& Vegetation Analysis:} Developed a dual-model vision pipeline combining VGGT monocular depth estimation and YOLO instance segmentation. Engineered a bitwise mask intersection algorithm to filter foliage within a 1.0-meter proximity threshold.}
-        \resumeItem{\textbf{SLAM \& Spatial Computing:} Developed binocular visual SLAM and odometry architectures using StereoSGBM disparity mapping, ORB/FAST feature extraction, and Levenberg-Marquardt pose optimization.}
-        \resumeItem{\textbf{Algorithmic Optimization:} Designed custom Non-Maximum Suppression (NMS) algorithms, implemented ArcFace embeddings with FAISS for asynchronous POI tracking, and trained Isolation Forests for anomaly detection.}
-        \resumeItem{\textbf{Hardware Integration \& Backend:} Synchronized parallel inference with MAVLink telemetry and YDLIDAR G2 point clouds via C++. Built a FastAPI backend to generate PDF agronomic reports.}
+        \resumeItem{\textbf{Autonomous Vision Systems:} Architected a multi-model vision pipeline (YOLO, VGGT, OpenCV) for real-time crop pathology detection across 7 commercial crops and worker safety monitoring.}
+        \resumeItem{\textbf{Depth \& Vegetation Analysis:} Combined VGGT monocular depth estimation with YOLO instance segmentation and a custom bitwise mask intersection algorithm to filter foliage within a 1.0-meter proximity threshold.}
+        \resumeItem{\textbf{SLAM \& Spatial Computing:} Developed binocular visual SLAM and odometry architectures using StereoSGBM disparity mapping, ORB and FAST feature extraction, and Levenberg-Marquardt pose optimization.}
+        \resumeItem{\textbf{Algorithmic Optimization:} Designed custom Non-Maximum Suppression (NMS) algorithms, implemented ArcFace embeddings with FAISS and SQLite for asynchronous POI tracking, and trained Isolation Forests for anomaly detection.}
+        \resumeItem{\textbf{Hardware Integration \& Backend:} Synchronized parallel inference with MAVLink telemetry and YDLIDAR G2 point clouds via C++, and built a FastAPI backend generating bilingual English and Telugu PDF agronomic reports.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
-      {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
+      {The Machine Learning Club, VIT-AP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct 2023 -- May 2025}
       \resumeItemListStart
-        \resumeItem{Engineered a 3D survival game in Godot (GDScript) featuring state-persistent UIs, dynamic minimaps, and NavigationMesh-based enemy AI pathfinding with progressive difficulty scaling. \href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{(GitHub)}}}
+        \resumeItem{Built a 3D survival game in Godot (GDScript) featuring state-persistent UIs, dynamic minimaps, and NavigationMesh-based enemy AI pathfinding with progressive difficulty scaling (\href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{github.com/MLC-VIT-AP/PAC\_3D}}).}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -122,43 +121,43 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{AI SIEM \& MDR Pipeline} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{Aug 2026 -- Nov 2026}
       \resumeItemListStart
-        \resumeItem{Engineered an AI-driven SIEM/MDR framework that normalizes heterogeneous telemetry (network flows, web apps, OS logs) into a unified JSON schema.}
-        \resumeItem{Deployed Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF N-grams for L7 web/auth threat isolation.}
-        \resumeItem{Built a central Fusion Engine utilizing a temporal sliding window for cross-layer cyber threat correlation, integrating SHAP and LIME for explainability.}
-        \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
+        \resumeItem{Architected wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
+        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP with custom packet reconstruction.}
+        \resumeItem{Built a Python AI pipeline using Faster-Whisper (base.en) with overlap deduplication, GCC-PHAT directional localization, and SpeechBrain ECAPA-TDNN speaker tracking.}
+        \resumeItem{Implemented VADER sentiment prefixes and fuzzy name-call detection to trigger real-time HUD subtitles alongside GPIO haptic motor and RGB LED accessibility alerts.}
+        \resumeItem{GitHub: \href{https://github.com/Dhwani-AR/ar-accessibility-glasses}{\underline{github.com/Dhwani-AR/ar-accessibility-glasses}}}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{Aug. 2026 -- Nov. 2026}
+      {\textbf{Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan 2026 -- May 2026}
       \resumeItemListStart
-        \resumeItem{Engineered wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
-        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP (port 5005, sleep disabled) with packet reconstruction.}
-        \resumeItem{Built a Python AI pipeline using Faster-Whisper (base.en) with overlap deduplication, GCC-PHAT directional localization, and SpeechBrain ECAPA-TDNN speaker tracking.}
-        \resumeItem{Implemented VADER sentiment prefixes and fuzzy name-call detection to trigger real-time HUD subtitles alongside GPIO haptic motor and RGB LED accessibility alerts.}
-        \resumeItem{Hosted on GitHub: \href{https://github.com/Dhwani-AR/ar-accessibility-glasses}{\underline{github.com/Dhwani-AR/ar-accessibility-glasses}}}
+        \resumeItem{Engineered an AI-driven SIEM and MDR framework normalizing heterogeneous telemetry across network flows, web apps, and OS logs into a unified JSON schema.}
+        \resumeItem{Deployed Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF N-grams for L7 web and authentication threat isolation.}
+        \resumeItem{Built a central Fusion Engine utilizing a 60-second temporal sliding window for cross-layer cyber threat correlation, integrating SHAP and LIME for explainability.}
+        \resumeItem{GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
- \begin{itemize}[leftmargin=8pt, label={}, topsep=2pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+ \begin{itemize}[leftmargin=8pt, label={}, topsep=3pt, partopsep=0pt, itemsep=1pt, parsep=0pt]
     \small{\item{
-     \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Zsh, Lua, Kotlin, GDScript, Scala} \\
-     \textbf{AI, ML \& Vision}{: PyTorch, JAX, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, LangChain, SHAP, LIME} \\
-     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Docker, Kubernetes, Git/GitHub, FastAPI, QML, Volatility 3, AVML, Wireshark, Snort, Suricata} \\
-     \textbf{Hardware \& Edge}{: ESP32, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
-     \textbf{Core Domains}{: Computer Vision, Visual SLAM, Cybersecurity ( SIEM/MDR ) Pipelines, Digital \& Memory Forensics, Unsupervised Learning}
+     \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Kotlin, GDScript} \\
+     \textbf{AI, ML \& Vision}{: PyTorch, TensorFlow, Scikit-Learn, OpenCV, YOLO, MediaPipe, FAISS, Transformers, LangChain, SHAP, LIME} \\
+     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning), Docker, Kubernetes, Git, GitHub, FastAPI, SQLite, QML, Volatility 3, Wireshark, Suricata} \\
+     \textbf{Hardware \& Edge}{: ESP32-S3, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
+     \textbf{Core Domains}{: Computer Vision, Visual SLAM, Cybersecurity (SIEM, MDR), Digital \& Memory Forensics, Unsupervised Learning}
     }}
  \end{itemize}
  \vspace{-4pt}
 
 \section{Awards \& Achievements}
- \begin{itemize}[leftmargin=8pt, label={}, topsep=2pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+ \begin{itemize}[leftmargin=8pt, label={}, topsep=3pt, partopsep=0pt, itemsep=1pt, parsep=0pt]
     \small{\item{
-     \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
-     \textbf{AI Hackathon 2025}{: AIMERS Letter of Appreciation (Feb. 2025).} \\
-     \textbf{Ideathon 2K25}{: Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
+     \textbf{1st Place, Innovative Model (AI \& DS):} Siddhartha Academy of Higher Education Innovation Day (Oct 2025). \\
+     \textbf{AI Hackathon 2025:} AIMERS Letter of Appreciation (Feb 2025). \\
+     \textbf{Ideathon 2K25:} Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar 2025).
     }}
  \end{itemize}
  \vspace{-4pt}
