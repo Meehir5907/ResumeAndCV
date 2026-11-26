@@ -11,7 +11,11 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -36,8 +40,6 @@
 \titleformat{\section}{
   \vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
-
-\pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -187,6 +189,16 @@
 
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{Aug. 2026 -- Nov. 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
+        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP (port 5005, sleep disabled) with packet reconstruction.}
+        \resumeItem{Built a Python AI pipeline using Faster-Whisper (base.en) with overlap deduplication, GCC-PHAT directional localization, and SpeechBrain ECAPA-TDNN speaker tracking.}
+        \resumeItem{Implemented VADER sentiment prefixes and fuzzy name-call detection to trigger real-time HUD subtitles alongside GPIO haptic motor and RGB LED accessibility alerts.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Dhwani-AR/ar-accessibility-glasses}{\underline{github.com/Dhwani-AR/ar-accessibility-glasses}}}
+      \resumeItemListEnd
+
     \resumeProjectHeading
       {\textbf{Project Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
       \resumeItemListStart

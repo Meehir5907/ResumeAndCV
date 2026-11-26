@@ -3,15 +3,18 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+\usepackage[hidelinks]{hyperref}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -34,48 +37,46 @@
 
 % Tighter Section Spacing
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-9pt}]
-
-\pdfgentounicode=1
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-2pt}\item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \vspace{-2pt}\item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=20pt, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=8pt, label={}, topsep=4pt, partopsep=0pt, itemsep=5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt, topsep=2pt, partopsep=0pt, itemsep=1.5pt, parsep=0pt]}
 % Tighter List End Spacing
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \begin{document}
 
@@ -113,8 +114,7 @@
       {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
       {Technical \& Project Team Member}{Oct. 2023 -- May 2025}
       \resumeItemListStart
-        \resumeItem{Engineered a 3D survival game in Godot (GDScript) featuring state-persistent UIs, dynamic minimaps, and NavigationMesh-based enemy AI pathfinding with progressive difficulty scaling.}
-        \resumeItem{Hosted on GitHub: \href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{github.com/MLC-VIT-AP/PAC\_3D}}}
+        \resumeItem{Engineered a 3D survival game in Godot (GDScript) featuring state-persistent UIs, dynamic minimaps, and NavigationMesh-based enemy AI pathfinding with progressive difficulty scaling. \href{https://github.com/MLC-VIT-AP/PAC_3D}{\underline{(GitHub)}}}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -131,34 +131,36 @@
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul. 2024 -- Nov. 2025}
+      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{[Start Date -- End Date]}
       \resumeItemListStart
-        \resumeItem{Engineered a neutrally buoyant autonomous submarine for deep sewage inspection, utilizing an isolated 11.1V dual-battery architecture to prevent CPU brownouts.}
-        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 3.0 FPS.}
-        \resumeItem{Designed a mechanical SONAR imaging system (DYP-A08) using Open3D noise reduction and Matplotlib bicubic interpolation to generate depth heatmaps for zero-visibility navigation.}
-        \resumeItem{Programmed 3D propulsion and arm actuation via \texttt{lgpio}, controlling RS2205 brushless motors via 30A ESCs and a PCA9685 PWM controller.}
+        \resumeItem{Engineered wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
+        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP (port 5005, sleep disabled) with packet reconstruction.}
+        \resumeItem{Built a Python AI pipeline using Faster-Whisper (base.en) with overlap deduplication, GCC-PHAT directional localization, and SpeechBrain ECAPA-TDNN speaker tracking.}
+        \resumeItem{Implemented VADER sentiment prefixes and fuzzy name-call detection to trigger real-time HUD subtitles alongside GPIO haptic motor and RGB LED accessibility alerts.}
+        \resumeItem{Hosted on GitHub: \href{https://github.com/Dhwani-AR/ar-accessibility-glasses}{\underline{github.com/Dhwani-AR/ar-accessibility-glasses}}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
- \begin{itemize}[leftmargin=20pt, label={}]
+ \begin{itemize}[leftmargin=8pt, label={}, topsep=2pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
     \small{\item{
      \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Zsh, Lua, Kotlin, GDScript, Scala} \\
-     \textbf{AI, ML \& Vision}{: PyTorch, JAX, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, SHAP, LIME} \\
+     \textbf{AI, ML \& Vision}{: PyTorch, JAX, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, LangChain, SHAP, LIME} \\
      \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Docker, Kubernetes, Git/GitHub, FastAPI, QML, Volatility 3, AVML, Wireshark, Snort, Suricata} \\
      \textbf{Hardware \& Edge}{: ESP32, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
      \textbf{Core Domains}{: Computer Vision, Visual SLAM, Cybersecurity ( SIEM/MDR ) Pipelines, Digital \& Memory Forensics, Unsupervised Learning}
     }}
  \end{itemize}
+ \vspace{-4pt}
 
 \section{Awards \& Achievements}
- \begin{itemize}[leftmargin=20pt, label={}]
+ \begin{itemize}[leftmargin=8pt, label={}, topsep=2pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
     \small{\item{
      \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
      \textbf{AI Hackathon 2025}{: AIMERS Letter of Appreciation (Feb. 2025).} \\
      \textbf{Ideathon 2K25}{: Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
     }}
  \end{itemize}
- \vspace{-10pt}
+ \vspace{-4pt}
 
 \end{document}
