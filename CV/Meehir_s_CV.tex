@@ -3,14 +3,13 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
 
 \ifdefined\pdfgentounicode
   \input{glyphtounicode}
@@ -93,8 +92,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {VIT-AP University}{India}
-      {Bachelor of Technology - BTech, Computer Science and Engineering}{Aug. 2023 -- Expected Jun 2027}
+      {VIT-AP University}{Amaravati, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2023 -- Jun 2027 (Expected)}
     \resumeSubheading
       {Bhatnagar International School}{India}
       {PCM (Physics, Chemistry, Mathematics)}{}
@@ -108,7 +107,7 @@
 
     \resumeSubheading
       {TechtoGreen Drone \& Robotics Private Limited}{Amaravati, Andhra Pradesh, India}
-      {AI/ML and Computer Vision Intern}{Dec. 2024 -- May 2026}
+      {AI/ML and Computer Vision Intern}{Dec 2024 -- May 2026}
       \resumeItemListStart
       
         \vspace{2pt}
@@ -176,8 +175,8 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {The Machine Learning CLUB VITAP}{Amaravati, Andhra Pradesh, India}
-      {Technical \& Project Team Member}{Oct. 2023 -- May. 2025}
+      {The Machine Learning Club, VIT-AP}{Amaravati, Andhra Pradesh, India}
+      {Technical \& Project Team Member}{Oct 2023 -- May 2025}
       \resumeItemListStart
         \resumeItem{\textbf{Game Engine Architecture:} Engineered a 3D survival game (PAC 3D) in Godot Engine using GDScript, implementing custom physical environments, ambient audio systems, and state-persistent UI overlays.}
         \resumeItem{\textbf{AI \& Pathfinding:} Programmed dynamic enemy AI utilizing Godot's NavigationMesh for spatial pathfinding, featuring smooth animation blending and progressive difficulty scaling algorithms.}
@@ -190,29 +189,29 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{Aug. 2026 -- Nov. 2026}
+      {\textbf{Dhwani (AR Accessibility Glasses)} $|$ \emph{ESP32-S3, Python, Faster-Whisper, SpeechBrain}}{Aug 2026 -- Nov 2026}
       \resumeItemListStart
-        \resumeItem{Engineered wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
-        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP (port 5005, sleep disabled) with packet reconstruction.}
+        \resumeItem{Architected wearable AR accessibility glasses on an ESP32-S3-WROOM-1 (PlatformIO) with a vertically mirrored SSD1306 OLED holographic HUD (U8g2) and tinted one-way glass.}
+        \resumeItem{Integrated a 4-channel INMP441 MEMS microphone array streaming low-latency audio over 2.4 GHz Wi-Fi UDP with custom packet reconstruction.}
         \resumeItem{Built a Python AI pipeline using Faster-Whisper (base.en) with overlap deduplication, GCC-PHAT directional localization, and SpeechBrain ECAPA-TDNN speaker tracking.}
         \resumeItem{Implemented VADER sentiment prefixes and fuzzy name-call detection to trigger real-time HUD subtitles alongside GPIO haptic motor and RGB LED accessibility alerts.}
         \resumeItem{Hosted on GitHub: \href{https://github.com/Dhwani-AR/ar-accessibility-glasses}{\underline{github.com/Dhwani-AR/ar-accessibility-glasses}}}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Project Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan. 2026 -- May 2026}
+      {\textbf{Chakshu (AI SIEM \& MDR Pipeline)} $|$ \emph{Python, Scikit-Learn, SHAP, LIME}}{Jan 2026 -- May 2026}
       \resumeItemListStart
-        \resumeItem{Engineered an AI-driven SIEM/MDR framework that normalizes heterogeneous telemetry across network flows, web apps, and OS logs (Loghub, LANL, CICIDS) into a standardized JSON schema.}
-        \resumeItem{Deployed layer-specific ML models, utilizing Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF character N-grams for L7 web and auth threat isolation.}
-        \resumeItem{Built a central Fusion Engine utilizing a 60-second temporal sliding window for cross-layer attack correlation, integrating SHAP and LIME for explainable threat attribution.}
+        \resumeItem{Engineered an AI-driven SIEM and MDR framework that normalizes heterogeneous telemetry across network flows, web apps, and OS logs (Loghub, LANL, CICIDS) into a standardized JSON schema.}
+        \resumeItem{Deployed layer-specific ML models, utilizing Isolation Forests for L3/L4 network anomaly detection and One-Class SVMs with TF-IDF character N-grams for L7 web and authentication threat isolation.}
+        \resumeItem{Built a central Fusion Engine utilizing a 60-second temporal sliding window for cross-layer cyber threat correlation, integrating SHAP and LIME for explainable threat attribution.}
         \resumeItem{Hosted on GitHub: \href{https://github.com/Meehir5907/Chakshu}{\underline{github.com/Meehir5907/Chakshu}}}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul. 2024 -- Nov. 2025}
+      {\textbf{Autonomous Sewage Maintenance Submarine} $|$ \emph{Python, YOLOv8n, NCNN, Open3D, RPi 5}}{Jul 2024 -- Nov 2025}
       \resumeItemListStart
         \resumeItem{Engineered a neutrally buoyant autonomous submarine for deep sewage inspection to replace manual scavenging, utilizing an isolated 11.1V dual-battery architecture to prevent CPU brownouts.}
-        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 3.0 FPS.}
+        \resumeItem{Deployed an NCNN-optimized YOLOv8n instance segmentation model on a headless Raspberry Pi 5 to identify and map structural cracks in real-time at 15.0 FPS.}
         \resumeItem{Designed a mechanical SONAR imaging system (DYP-A08) utilizing Open3D noise reduction and Matplotlib bicubic interpolation to generate spatial depth heatmaps for zero-visibility navigation.}
         \resumeItem{Programmed 3D propulsion and robotic arm actuation via \texttt{lgpio}, controlling RS2205 brushless motors via 30A ESCs and a PCA9685 PWM controller.}
       \resumeItemListEnd
@@ -221,20 +220,20 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=20pt, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL, Go, Bash/Zsh, Lua, Kotlin, GDScript, Scala} \\
-     \textbf{AI, ML \& Vision}{: PyTorch, JAX, TensorFlow, Keras, OpenCV, YOLO, MediaPipe, FAISS, Transformers, SHAP, LIME} \\
-     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Git/GitHub, FastAPI, QML, Volatility 3, AVML} \\
-     \textbf{Hardware \& Edge}{: ESP32, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
-     \textbf{Core Domains}{: Computer Vision, Visual SLAM, SIEM/MDR Pipelines, Memory Forensics, Unsupervised Learning}
+     \textbf{Languages}{: Python, C, C++, SQL, Go, Bash, Zsh, Lua, Kotlin, GDScript, Scala} \\
+     \textbf{AI, ML \& Vision}{: PyTorch, JAX, TensorFlow, Keras, Scikit-Learn, OpenCV, YOLO, MediaPipe, FAISS, Transformers, LangChain, SHAP, LIME} \\
+     \textbf{Systems \& Tools}{: Linux (KVM, Kernel Tuning, Cron), Docker, Kubernetes, Git, GitHub, FastAPI, QML, SQLite, Volatility 3, AVML, Wireshark, Snort, Suricata} \\
+     \textbf{Hardware \& Edge}{: ESP32-S3, Arduino, LiDAR (YDLIDAR), MAVLink Telemetry, Raspberry Pi} \\
+     \textbf{Core Domains}{: Computer Vision, Visual SLAM, Cybersecurity (SIEM, MDR), Digital \& Memory Forensics, Unsupervised Learning}
     }}
  \end{itemize}
 
 \section{Awards \& Achievements}
  \begin{itemize}[leftmargin=20pt, label={}]
     \small{\item{
-     \textbf{1st Place (Dept. of AI/DS), Innovative Model:} Secured 1st place at Siddhartha Academy of Higher Education Innovation Day (Oct. 2025) in department of Artificial Intelligence / Data Science. \\
-     \textbf{AI Hackathon 2025}{: AIMERS Letter of Appreciation (Feb. 2025).} \\
-     \textbf{Ideathon 2K25}{: Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar. 2025).}
+     \textbf{1st Place, Innovative Model (AI \& DS):} Siddhartha Academy of Higher Education Innovation Day (Oct 2025). \\
+     \textbf{AI Hackathon 2025:} AIMERS Letter of Appreciation (Feb 2025). \\
+     \textbf{Ideathon 2K25:} Innovation Showcase Participant at Chalapathi Institute of Engineering \& Technology (Mar 2025).
     }}
  \end{itemize}
  \vspace{-10pt}
